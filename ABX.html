@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Platforma odsłuchowa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+  <script type="text/javascript" src="./download.js"></script>
+  <script type="text/javascript" src="./config_AB.js"></script>
+  <script type="text/javascript" src="./config_ABX.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body>
+<div>
+  <h1>ABX TEST</h1>
+</div>
+
+<div class="btn-ab">
+  <button onclick="testABXsampleA();">A</button>
+  <button onclick="testABXsampleB();">B</button>
+  <form id="test">
+      <label class="radio1"><input id="choice1" type="radio" name="option" value="A" disabled="disabled">A</label> 
+      <label class="radio2"><input id="choice2" type="radio" name="option" value="B" disabled="disabled">B</label>
+  </form>
+  <input type="image" src="stop.png" alt="Stop" width="60" height="60" onclick="stopPlaying()">
+  <br>
+  <button onclick="testABXsampleX();"></button>
+  <br>X
+</div>
+
+<div class="btn-end">
+  <button onclick="nextButton(event)">DALEJ</button>
+</div>
+
+</body>
+</html>
